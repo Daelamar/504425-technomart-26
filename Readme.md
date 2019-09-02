@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ilya Samarin](https://up.htmlacademy.ru/htmlcss/26/user/504425).
-* Наставник: Анастасия Полозова(https://htmlacademy.ru/profile/id258631).
+* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631).
 
 ---
 
