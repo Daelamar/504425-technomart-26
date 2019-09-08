@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Каталог товаров интернет-магазина строительных материалов и инструментов Техномарт">
   <title>Каталог</title>
 </head>
 
 <body>
 <header class="main-header">
-  <img class="main-logo"
+  <img class="main-header__main-logo"
        src="https://via.placeholder.com/220x42"
        alt="Логотип Техномарт"
        width="220"
@@ -86,14 +89,30 @@
   </ul>
   <h2>Перфораторы</h2>
 
-  <!-- Тут будет сортировка-->
-
   <section class="form">
     <h2>Фильтр для товаров</h2>
+    <p>Фильтр:</p>
     <form method="post" action="http://echo.htmlacademy.ru">
-
-      <!-- Тут будет ползунок с диапазоном цен -->
-
+      <fieldset>
+        <legend>Цена:</legend>
+        <!-- Форма с туглетками,  при стилизации дополню классами и доступностью-->
+        <div>
+          <label for="filter-start-price">
+            <input type="text" name="filter-start-price" id="filter-start-price" value="0" readonly>
+          </label>
+          <label for="filter-end-price">
+            <input type="text" name="filter-end-price" id="filter-end-price" value="30000" readonly>
+          </label>
+        </div>
+        <div>
+          <div>
+            <!--Контейнер для полозка-->
+            <div><!--Сам полозок--></div>
+          </div>
+          <div><!--Левая туглетка--></div>
+          <div><!--Правая туглетка--></div>
+        </div>
+      </fieldset>
       <fieldset>
         <legend>Производители</legend>
         <ul>
@@ -157,6 +176,24 @@
   </section>
   <section class="catalog">
     <h2>Список товаров</h2>
+    <div>
+      <p>Сортировка:</p>
+      <ul>
+        <li>
+          <a href="#">По цене</a>
+        </li>
+        <li>
+          <a href="#">По типу</a>
+        </li>
+        <li>
+          <a href="#">По функционалу</a>
+        </li>
+      </ul>
+      <div>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
     <ul>
       <li>
         <img src="https://via.placeholder.com/218x170"
@@ -177,8 +214,14 @@
         <p>25500 Р.</p>
       </li>
       <li>
-        <button type="button">Купить</button>
-        <button type="button">В закладки</button>
+        <div>
+          <button type="button">Купить</button>
+          <button type="button">В закладки</button>
+        </div>
+        <img src="https://via.placeholder.com/218x170"
+             alt="Фото товара"
+             width="218"
+             height="170">
         <h3>Перфоратор BOSCH BFG 2000</h3>
         <p>12500 Р.</p>
         <span>new</span>
@@ -237,6 +280,33 @@
         <p>12500 Р.</p>
       </li>
     </ul>
+    <div>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="goods-info">
+    <h2>Интересная информация о товаре</h2>
+    <p>Пара слов о перфораторах</p>
+    <p>Перфоратор — универсальный строительный инструмент.
+      Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+      шуруповерта и отбойного молотка.
+      В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+      совмещены отбойный молоток и ударная дрель.
+    </p>
   </section>
 </main>
 <footer class="main-footer">

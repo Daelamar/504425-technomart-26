@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Интернет-магазин строительных материалов и инструментов для ремонта Техномарт">
   <title>Техномарт</title>
 </head>
 
 <body>
 <header class="main-header">
-  <img class="main-logo"
+  <img class="main-header__main-logo"
        src="https://via.placeholder.com/220x42"
        alt="Логотип Техномарт"
        width="220"
@@ -76,32 +79,151 @@
 </header>
 <main class="main">
   <h1>Магазин строительных материалов и инструментов Техномарт</h1>
-
-  <!-- Тут будет слайдер и всякое -->
-  <!-- В этом задании этот блок пока не верстаем
-    <article class="info-block">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
-        <li>
-          <button type="button">Доставка</button>
-        </li>
-        <li>
-          <button type="button">Гарантия</button>
-        </li>
-        <li>
-          <button type="button">Кредит</button>
-        </li>
-      </ul>
-      <div>
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар
-          прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
-      </div>
-    </article>
-    -->
+  <section class="offers">
+    <h2>Выгодные предложения</h2>
+    <ul>
+      <li>
+        <p>Материалы</p>
+        <a href="#">На любой вкус</a>
+        <span>new</span>
+      </li>
+      <li>
+        <p>Инструмент</p>
+        <a href="#">На все случаи</a>
+      </li>
+      <li>
+        <p>Техника</p>
+        <a href="#">Для стройки</a>
+      </li>
+      <li>
+        <!-- Тут блоки для слайдера-->
+        <div>
+          <button type="button"><!-- Левый переключатель --></button>
+          <button type="button"><!-- Правый переключатель --></button>
+          <div>
+            <a href="catalog.html">Открыть каталог</a>
+            <button type="button"><!-- Нижний левый переключатель --></button>
+            <button type="button"><!-- Нижний правый переключатель --></button>
+          </div>
+        </div>
+        <div>
+          <button type="button"><!-- Левый переключатель --></button>
+          <button type="button"><!-- Правый переключатель --></button>
+          <div>
+            <a href="catalog.html">Открыть каталог</a>
+            <button type="button"><!-- Нижний левый переключатель --></button>
+            <button type="button"><!-- Нижний правый переключатель --></button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <p>Скидки 50%</p>
+        <a href="#">На 350 товаров</a>
+      </li>
+      <li>
+        <p>Доставка</p>
+        <a href="#">Бесплатно</a>
+      </li>
+    </ul>
+  </section>
+  <section class="top-goods">
+    <div>
+      <h2>Популярные товары</h2>
+      <a href="#">Все популярные товары</a>
+    </div>
+    <ul>
+      <li>
+        <img src="https://via.placeholder.com/218x170"
+             alt="Фото товара"
+             width="218"
+             height="170">
+        <h3>Перфоратор BOSCH BFG 9000</h3>
+        <p>32500 Р.</p>
+        <p>25500 Р.</p>
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/218x170"
+             alt="Фото товара"
+             width="218"
+             height="170">
+        <h3>Перфоратор BOSCH BFG 3000</h3>
+        <p>22500 Р.</p>
+        <p>15500 Р.</p>
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/218x170"
+             alt="Фото товара"
+             width="218"
+             height="170">
+        <h3>Перфоратор BOSCH BFG 6000</h3>
+        <p>30500 Р.</p>
+        <p>25500 Р.</p>
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/218x170"
+             alt="Фото товара"
+             width="218"
+             height="170">
+        <h3>Перфоратор BOSCH BFG 2000</h3>
+        <p>12500 Р.</p>
+        <span>new</span>
+      </li>
+    </ul>
+  </section>
+  <section class="top-manufacturers">
+    <div>
+      <h2>Популярные производители</h2>
+      <a href="#">Все производители</a>
+    </div>
+    <ul>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+    </ul>
+  </section>
+  <article class="info-block">
+    <h2>Сервисы</h2>
+    <p>Хороший интернет-магазин отличается от плохого не только ценами!
+      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+    <ul>
+      <li>
+        <button type="button">Доставка</button>
+      </li>
+      <li>
+        <button type="button">Гарантия</button>
+      </li>
+      <li>
+        <button type="button">Кредит</button>
+      </li>
+    </ul>
+    <div>
+      <h2>Доставка</h2>
+      <p>Мы с удовольствием доставим ваш товар
+        прямо к вашему подъезду совершенно бесплатно!
+        Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
+    </div>
+  </article>
   <article class="about-block">
     <div>
       <h2>Компания «Техномарт»</h2>
