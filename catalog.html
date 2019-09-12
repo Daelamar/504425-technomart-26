@@ -107,7 +107,7 @@
   </nav>
 </header>
 <main>
-  <h1>Каталог товаров</h1>
+  <h1 class="visually-hidden">Каталог товаров</h1>
   <ul>
     <li>Каталог</li>
     <li>Инструмент</li>
@@ -116,7 +116,7 @@
   <h2>Перфораторы</h2>
 
   <section class="form">
-    <h2>Фильтр для товаров</h2>
+    <h2 class="visually-hidden">Фильтр для товаров</h2>
     <p>Фильтр:</p>
     <form method="post" action="http://echo.htmlacademy.ru">
       <fieldset>
@@ -135,8 +135,8 @@
             <!--Контейнер для полозка-->
             <div><!--Сам полозок--></div>
           </div>
-          <div><!--Левая туглетка--></div>
-          <div><!--Правая туглетка--></div>
+          <div tabindex="0" aria-label="Значение минимальной цены"><!--Левая туглетка--></div>
+          <div tabindex="0" aria-label="Значение максимальной цены"><!--Правая туглетка--></div>
         </div>
       </fieldset>
       <fieldset>
@@ -201,7 +201,7 @@
     </form>
   </section>
   <section class="catalog">
-    <h2>Список товаров</h2>
+    <h2 class="visually-hidden">Список товаров</h2>
     <div>
       <p>Сортировка:</p>
       <ul>
@@ -356,7 +356,7 @@
     </div>
   </section>
   <section class="goods-info">
-    <h2>Интересная информация о товаре</h2>
+    <h2 class="visually-hidden">Интересная информация о товаре</h2>
     <p>Пара слов о перфораторах</p>
     <p>Перфоратор — универсальный строительный инструмент.
       Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -369,7 +369,7 @@
 </main>
 <footer class="main-footer">
   <section>
-    <h2>Контакты и информация</h2>
+    <h2 class="visually-hidden">Контакты и информация</h2>
     <p class="main-footer__logo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -409,7 +409,7 @@
         <a href="#">Новости</a>
       </li>
       <li>
-        <a href="#">Каталог</a>
+        <a href="catalog.html">Каталог</a>
       </li>
       <li>
         <a href="#">Доставка</a>
@@ -442,28 +442,36 @@
     </ul>
   </section>
   <section>
-    <h2>Обратная связь и социальные сети</h2>
+    <h2 class="visually-hidden">Обратная связь и социальные сети</h2>
     <p>&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
     <ul>
       <li>
-        <a href="https://vk.com/"><span>ВКонтакте</span></a>
+        <a href="https://vk.com/" aria-label="Наша страница Вконтакте"></a>
       </li>
       <li>
-        <a href="https://ru-ru.facebook.com/"><span>Фейсбук</span></a>
+        <a href="https://ru-ru.facebook.com/" aria-label="Наша страница на Фейсбук"></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/"><span>Инстаграмм</span></a>
+        <a href="https://www.instagram.com/" aria-label="Наша страница в Инстаграмм"></a>
       </li>
     </ul>
     <p>
-      Обратная связь:
+      <span>Обратная связь:</span>
       <a href="https://www.mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
     <p>
-      Разработано —
+      <span>Разработано — </span>
       <a href="https://www.htmlacademy.ru">htmlacademy.ru</a>
     </p>
   </section>
 </footer>
+<div class="basket-popup">
+  <p>Товар добавлен в корзину!</p>
+  <div>
+    <a href="#">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+    <button type="button" aria-label="Кнопка закрытия окна"></button>
+  </div>
+</div>
 </body>
 </html>

@@ -104,9 +104,9 @@
   </nav>
 </header>
 <main class="main">
-  <h1>Магазин строительных материалов и инструментов Техномарт</h1>
+  <h1 class="visually-hidden">Магазин строительных материалов и инструментов Техномарт</h1>
   <section class="offers">
-    <h2>Выгодные предложения</h2>
+    <h2 class="visually-hidden">Выгодные предложения</h2>
     <ul>
       <li>
         <p>Материалы</p>
@@ -314,11 +314,48 @@
            height="158">
       <a href="#">Заблудились? Напишите нам!</a>
     </div>
+    <div class="about-block__map-popup">
+      <img src="img/backgrounds/map_popup.png" alt="Карта проезда" width="940" height="446">
+      <button type="button" aria-label="Кнопка закрытия окна"></button>
+    </div>
+    <div class="about-block__write-us-popup">
+      <form method="post" action="http://echo.htmlacademy.ru">
+        <fieldset>
+          <ul>
+            <li>
+              <label for="username">Ваше имя:</label>
+              <input type="text"
+                     id="username"
+                     name="username"
+                     placeholder="Имя Фамилия">
+            </li>
+            <li>
+              <label for="user-mail">Ваш e-mail:</label>
+              <input type="email"
+                     id="user-mail"
+                     name="user-mail"
+                     placeholder="email@example.com">
+            </li>
+            <li>
+              <label for="textarea">Текст письма:</label>
+              <textarea id="textarea"
+                        name="textarea"
+                        placeholder="В свободной форме">
+              </textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <div>
+          <button type="submit">Отправить</button>
+          <button type="button" aria-label="Кнопка закрытия окна"></button>
+        </div>
+      </form>
+    </div>
   </article>
 </main>
 <footer class="main-footer">
   <section>
-    <h2>Контакты и информация</h2>
+    <h2 class="visually-hidden">Контакты и информация</h2>
     <p class="main-footer__logo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -391,25 +428,25 @@
     </ul>
   </section>
   <section>
-    <h2>Обратная связь и социальные сети</h2>
+    <h2 class="visually-hidden">Обратная связь и социальные сети</h2>
     <p>&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
     <ul>
       <li>
-        <a href="https://vk.com/"><span>ВКонтакте</span></a>
+        <a href="https://vk.com/" aria-label="Наша страница Вконтакте"></a>
       </li>
       <li>
-        <a href="https://ru-ru.facebook.com/"><span>Фейсбук</span></a>
+        <a href="https://ru-ru.facebook.com/" aria-label="Наша страница на Фейсбук"></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/"><span>Инстаграмм</span></a>
+        <a href="https://www.instagram.com/" aria-label="Наша страница в Инстаграмм"></a>
       </li>
     </ul>
     <p>
-      Обратная связь:
+      <span>Обратная связь:</span>
       <a href="https://www.mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
     <p>
-      Разработано —
+      <span>Разработано — </span>
       <a href="https://www.htmlacademy.ru">htmlacademy.ru</a>
     </p>
   </section>
@@ -417,4 +454,3 @@
 </body>
 
 </html>
-
