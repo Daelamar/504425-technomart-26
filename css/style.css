@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Cuprum";
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
   src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
@@ -73,10 +73,12 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #000000;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .invisible {
@@ -174,6 +176,10 @@ a {
   border: none;
 }
 
+.main-header__user-menu-item button {
+  cursor: pointer;
+}
+
 .main-header__user-menu-item--catalog a {
   font-size: 16px;
   line-height: 18px;
@@ -234,14 +240,116 @@ a {
   background-repeat: no-repeat;
 }
 
-.main-title {
+.main__title {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  background-color: #f2f6f8;
 }
 
-/*todo: Футер*/
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__fieldset label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  border: 1px solid #e5e5e5;
+}
+
+.product-cart__button--buy {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px 0 #367315;
+  border: none;
+  cursor: pointer;
+}
+
+.product-cart__button--basket {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  cursor: pointer;
+}
+
+.product-cart__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.product-cart__price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /*background-color: #ee3643;*/ /*todo: разобраться с подложкой*/
+  background-image: url("../img/backgrounds/price_bg.png");
+  background-repeat: no-repeat;
+}
+
+.product-cart__price--discount {
+  color: #999999;
+  text-decoration: line-through;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.product-cart__new {
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+/*todo: второе задание*/
+
+.goods-info {
+  background-color: #f2f6f8;
+}
+
+/*Футер*/
 
 .main-footer__info {
   background-color: #32425c;
