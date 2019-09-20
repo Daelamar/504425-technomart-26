@@ -181,6 +181,10 @@ a {
   outline: none;
 }
 
+.main-header__menu-item--catalog a {
+  background-color: #ee3643;
+}
+
 .main-header__menu-item a:hover,
 .main-header__menu-item a:focus {
   background-color: #212a3a;
@@ -430,24 +434,135 @@ a {
 .top-manufacturers__header a {
   font-size: 14px;
   line-height: 18px;
+  transition-duration: 0.3s;
+  outline: none;
 }
 
 .slider__link:hover,
 .slider__link:focus,
 .top-goods__header a:hover,
 .top-goods__header a:focus,
-.top-manufacturers__header:hover,
-.top-manufacturers__header:focus {
+.top-manufacturers__header a:hover,
+.top-manufacturers__header a:focus {
   background-color: #ca2c37;
 }
 
 .slider__link:active,
 .top-goods__header a:active,
-.top-manufacturers__header:active {
+.top-manufacturers__header a:active {
   background-color: #ba2732;
 }
 
-/* Первое */
+.top-manufacturers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-manufacturers__item a {
+  border: 1px solid #eaeaea;
+  transition-duration: 0.3s;
+}
+
+.top-manufacturers__item a:hover,
+.top-manufacturers__item a:focus {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.top-manufacturers__item a:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
+.info-block {
+  background-color: #f4f8f9;
+}
+
+.info-block__header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info-block__header p,
+.info-block__description p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.info-block__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-block__button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  border: none;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.info-block__button:hover,
+.info-block__button:focus {
+  background-color: #293449;
+}
+
+.info-block__button:active {
+  color: #32425c;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+}
+
+.info-block__description h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.info-block__description--warranty h2 {
+  font-style: italic;
+}
+
+.info-block__link {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ff5357;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.info-block__link:hover,
+.info-block__link:focus {
+  background-color: #ca2c37;
+}
+
+.info-block__link:active {
+  background-color: #ba2732;
+}
+
+.info-block__description--delivery {
+  background-image: url("../img/backgrounds/car.png");
+  background-repeat: no-repeat;
+}
+
+.info-block__description--warranty {
+  background-image: url("../img/backgrounds/guaranty.png");
+  background-repeat: no-repeat;
+}
+
+.info-block__description--credit {
+  background-image: url("../img/backgrounds/credit.png");
+  background-repeat: no-repeat;
+}
+
 .about-block__company h2,
 .about-block__contact h2 {
   font-size: 30px;
@@ -511,6 +626,14 @@ a {
 
 .form__fieldset {
   border: none;
+}
+
+.form__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
 }
 
 .form__fieldset legend {
@@ -638,6 +761,18 @@ a {
 
 .goods-info {
   background-color: #f2f6f8;
+}
+
+.goods-info__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.goods-info__caption {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /*Футер*/

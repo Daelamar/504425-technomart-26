@@ -123,9 +123,9 @@
     </ul>
   </nav>
 </header>
-<main class="main container">
+<main class="main">
   <h1 class="visually-hidden">Магазин строительных материалов и инструментов Техномарт</h1>
-  <section class="offers">
+  <section class="offers container">
     <h2 class="visually-hidden">Выгодные предложения</h2>
     <ul class="offers__list">
       <li class="offers__item offers__item--materials">
@@ -183,7 +183,7 @@
       </li>
     </ul>
   </section>
-  <section class="top-goods">
+  <section class="top-goods container">
     <div class="top-goods__header">
       <h2>Популярные товары</h2>
       <a class="button" href="#">Все популярные товары</a>
@@ -279,7 +279,7 @@
       </li>
     </ul>
   </section>
-  <section class="top-manufacturers">
+  <section class="top-manufacturers container">
     <div class="top-manufacturers__header">
       <h2>Популярные производители</h2>
       <a class="button" href="#">Все производители</a>
@@ -352,41 +352,45 @@
     </ul>
   </section>
   <article class="info-block">
-    <h2>Сервисы</h2>
-    <p>Хороший интернет-магазин отличается от плохого не только ценами!
-      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-    <ul>
-      <li>
-        <button type="button">Доставка</button>
-      </li>
-      <li>
-        <button type="button">Гарантия</button>
-      </li>
-      <li>
-        <button type="button">Кредит</button>
-      </li>
-    </ul>
-    <div>
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар
-        прямо к вашему подъезду совершенно бесплатно!
-        Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
-    </div>
-    <div>
-      <h2>Гарантия</h2>
-      <p>Если купленный у нас товар поломается или заискрит,
-        а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы
-        обменяем сгоревший товар на новый.
-        Дом уж восстановите как-нибудь сами.</p>
-    </div>
-    <div>
-      <h2>Кредит</h2>
-      <p>Залезть в долговую яму стало проще!
-        Кредитные консультанты придут вам на помощь.</p>
-      <a href="#">Отправить заявку</a>
+    <div class="info-block__wrapper container">
+      <div class="info-block__header">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      </div>
+      <ul class="info-block__list">
+        <li class="info-block__item">
+          <button class="info-block__button info-block__button--delivery" type="button">Доставка</button>
+        </li>
+        <li class="info-block__item">
+          <button class="info-block__button info-block__button--warranty" type="button">Гарантия</button>
+        </li>
+        <li class="info-block__item">
+          <button class="info-block__button info-block__button--credit" type="button">Кредит</button>
+        </li>
+      </ul>
+      <div class="info-block__description info-block__description--delivery">
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар
+          прямо к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
+      </div>
+      <div class="info-block__description info-block__description--warranty">
+        <h2>Гарантия</h2>
+        <p>Если купленный у нас товар поломается или заискрит,
+          а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы
+          обменяем сгоревший товар на новый.
+          Дом уж восстановите как-нибудь сами.</p>
+      </div>
+      <div class="info-block__description info-block__description--credit">
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще!
+          Кредитные консультанты придут вам на помощь.</p>
+        <a class="info-block__link button" href="#">Отправить заявку</a>
+      </div>
     </div>
   </article>
-  <article class="about-block">
+  <article class="about-block container">
     <div class="about-block__company">
       <h2>Компания «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь!
@@ -410,7 +414,6 @@
            height="158">
       <a href="#" class="about-block__link button">Заблудились? Напишите нам!</a>
     </div>
-
   </article>
 </main>
 <footer class="main-footer">
