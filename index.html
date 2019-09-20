@@ -127,38 +127,45 @@
   <h1 class="visually-hidden">Магазин строительных материалов и инструментов Техномарт</h1>
   <section class="offers">
     <h2 class="visually-hidden">Выгодные предложения</h2>
-    <ul>
-      <li>
+    <ul class="offers__list">
+      <li class="offers__item offers__item--materials">
         <p>Материалы</p>
-        <a href="#">На любой вкус</a>
-        <span>new</span>
+        <a class="offers__link" href="#">На любой вкус</a>
+        <span class="offers__new">new</span>
       </li>
-      <li>
+      <li class="offers__item offers__item--tool">
         <p>Инструмент</p>
-        <a href="#">На все случаи</a>
+        <a class="offers__link" href="#">На все случаи</a>
       </li>
-      <li>
+      <li class="offers__item offers__item--tech">
         <p>Техника</p>
-        <a href="#">Для стройки</a>
+        <a class="offers__link" href="#">Для стройки</a>
       </li>
-      <li>
-        <!-- Тут блоки для слайдера-->
-        <div>
-          <button type="button" aria-label="Предыдущий слайдер"><!-- Левый переключатель --></button>
-          <button type="button" aria-label="Следующий слайдер"><!-- Правый переключатель --></button>
+      <li class="offers__item slider">
+        <div class="slider__left">
+          <button type="button" aria-label="Предыдущий слайдер">
+            <!-- Левый переключатель --></button>
+          <button type="button" aria-label="Следующий слайдер">
+            <!-- Правый переключатель --></button>
           <div>
-            <a href="catalog.html">Открыть каталог</a>
+            <h2>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
             <button type="button" aria-label="Переключение на первый слайдер">
               <!-- Нижний левый переключатель --></button>
             <button type="button" aria-label="Переключение на второй слайдер">
               <!-- Нижний правый переключатель --></button>
           </div>
         </div>
-        <div>
-          <button type="button" aria-label="Предыдущий слайдер"><!-- Левый переключатель --></button>
-          <button type="button" aria-label="Следующий слайдер"><!-- Правый переключатель --></button>
+        <div class="slider__right">
+          <button type="button" aria-label="Предыдущий слайдер">
+            <!-- Левый переключатель --></button>
+          <button type="button" aria-label="Следующий слайдер">
+            <!-- Правый переключатель --></button>
           <div>
-            <a href="catalog.html">Открыть каталог</a>
+            <h2>Дрели</h2>
+            <p>Соседям на радость!</p>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
             <button type="button" aria-label="Переключение на первый слайдер">
               <!-- Нижний левый переключатель --></button>
             <button type="button" aria-label="Переключение на второй слайдер">
@@ -166,67 +173,119 @@
           </div>
         </div>
       </li>
-      <li>
+      <li class="offers__item offers__item--discount">
         <p>Скидки 50%</p>
-        <a href="#">На 350 товаров</a>
+        <a class="offers__link" href="#">На 350 товаров</a>
       </li>
-      <li>
+      <li class="offers__item offers__item--delivery">
         <p>Доставка</p>
-        <a href="#">Бесплатно</a>
+        <a class="offers__link" href="#">Бесплатно</a>
       </li>
     </ul>
   </section>
   <section class="top-goods">
-    <div>
+    <div class="top-goods__header">
       <h2>Популярные товары</h2>
-      <a href="#">Все популярные товары</a>
+      <a class="button" href="#">Все популярные товары</a>
     </div>
-    <ul>
-      <li>
-        <img src="img/contents/bfg_9000.jpg"
+    <ul class="top-goods__list">
+      <li class="top-goods__item product-cart">
+        <div class="product-cart__popup-block">
+          <button
+            class="product-cart__button product-cart__button--buy"
+            type="button">
+            Купить
+          </button>
+          <button
+            class="product-cart__button product-cart__button--basket"
+            type="button">
+            В закладки
+          </button>
+        </div>
+        <img class="product-cart__image"
+             src="img/contents/bfg_9000.jpg"
              alt="Фото товара Перфоратор Bosch bfg 9000"
              width="218"
              height="170">
-        <h3>Перфоратор BOSCH BFG 9000</h3>
-        <p>32500 Р.</p>
-        <p>25500 Р.</p>
+        <h3 class="product-cart__title">Перфоратор BOSCH BFG 9000</h3>
+        <p class="product-cart__price product-cart__price--discount">32500 Р.</p>
+        <p class="product-cart__price">25500 Р.</p>
       </li>
-      <li>
-        <img src="img/contents/bfg_3000.jpg"
+      <li class="top-goods__item product-cart">
+        <div class="product-cart__popup-block">
+          <button
+            class="product-cart__button product-cart__button--buy"
+            type="button">
+            Купить
+          </button>
+          <button
+            class="product-cart__button product-cart__button--basket"
+            type="button">
+            В закладки
+          </button>
+        </div>
+        <img class="product-cart__image"
+             src="img/contents/bfg_3000.jpg"
              alt="Фото товара Перфоратор Bosch bfg 3000"
              width="218"
              height="170">
-        <h3>Перфоратор BOSCH BFG 3000</h3>
-        <p>22500 Р.</p>
-        <p>15500 Р.</p>
+        <h3 class="product-cart__title">Перфоратор BOSCH BFG 3000</h3>
+        <p class="product-cart__price product-cart__price--discount">22500 Р.</p>
+        <p class="product-cart__price">15500 Р.</p>
       </li>
-      <li>
-        <img src="img/contents/bfg_6000.jpg"
+      <li class="top-goods__item product-cart">
+        <div class="product-cart__popup-block">
+          <button
+            class="product-cart__button product-cart__button--buy"
+            type="button">
+            Купить
+          </button>
+          <button
+            class="product-cart__button product-cart__button--basket"
+            type="button">
+            В закладки
+          </button>
+        </div>
+        <img class="product-cart__image"
+             src="img/contents/bfg_6000.jpg"
              alt="Фото товара Перфоратор Bosch bfg 6000"
              width="218"
              height="170">
-        <h3>Перфоратор BOSCH BFG 6000</h3>
-        <p>30500 Р.</p>
-        <p>25500 Р.</p>
+        <h3 class="product-cart__title">Перфоратор BOSCH BFG 6000</h3>
+        <p class="product-cart__price product-cart__price--discount">30500 Р.</p>
+        <p class="product-cart__price">25500 Р.</p>
       </li>
-      <li>
-        <img src="img/contents/bfg_2000.jpg"
+      <li class="top-goods__item product-cart">
+        <div class="product-cart__popup-block">
+          <button
+            class="product-cart__button product-cart__button--buy"
+            type="button">
+            Купить
+          </button>
+          <button
+            class="product-cart__button product-cart__button--basket"
+            type="button">
+            В закладки
+          </button>
+        </div>
+        <img class="product-cart__image"
+             src="img/contents/bfg_2000.jpg"
              alt="Фото товара Перфоратор Bosch bfg 2000"
              width="218"
              height="170">
-        <h3>Перфоратор BOSCH BFG 2000</h3>
-        <p>12500 Р.</p>
-        <span>new</span>
+        <h3 class="product-cart__title">Перфоратор BOSCH BFG 2000</h3>
+        <p class="product-cart__price">12500 Р.</p>
+        <span class="product-cart__new">new</span>
       </li>
     </ul>
   </section>
   <section class="top-manufacturers">
-    <div>
+    <div class="top-manufacturers__header">
       <h2>Популярные производители</h2>
-      <a href="#">Все производители</a>
+      <a class="button" href="#">Все производители</a>
     </div>
-    <ul>
-      <li>
+    <ul class="top-manufacturers__list">
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/bosch.png"
                alt="Логотип партнера-производителя Bosch"
@@ -234,7 +293,7 @@
                height="37">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/makita.png"
                alt="Логотип партнера-производителя Makita"
@@ -242,7 +301,7 @@
                height="40">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/dewalt.png"
                alt="Логотип партнера-производителя DeWalt"
@@ -250,7 +309,7 @@
                height="44">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/interskol.png"
                alt="Логотип партнера-производителя Интерскол"
@@ -258,7 +317,7 @@
                height="88">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/hitachi.png"
                alt="Логотип партнера-производителя Hitachi"
@@ -266,7 +325,7 @@
                height="31">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/lg.png"
                alt="Логотип партнера-производителя LG"
@@ -274,7 +333,7 @@
                height="73">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/aeg.png"
                alt="Логотип партнера-производителя AEG"
@@ -282,7 +341,7 @@
                height="96">
         </a>
       </li>
-      <li>
+      <li class="top-manufacturers__item">
         <a href="#">
           <img src="img/contents/metabo.png"
                alt="Логотип партнера-производителя Metabo"

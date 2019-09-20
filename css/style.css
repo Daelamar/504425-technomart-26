@@ -320,6 +320,134 @@ a {
   box-shadow: inset 0 -5px 0 #1d2739;
 }
 
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offers__item p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.offers__item--materials {
+  background-color: #ffbf47;
+}
+
+.offers__item--tool {
+  background-color: #3bbce3;
+}
+
+.offers__item--tech {
+  background-color: #dc91d8;
+}
+
+.offers__item--discount {
+  background-color: #8ed78f;
+}
+
+.offers__item--delivery {
+  background-color: #ffc047;
+}
+
+.offers__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition-duration: 0.3s;
+}
+
+.offers__link:hover,
+.offers__link:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offers__link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider p {
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slider__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  outline: none;
+  transition-duration: 0.3s;
+}
+
+.slider .slider__left {
+  background-color: #e0cfbb;
+  background-image: url("../img/backgrounds/slider_one.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider__right {
+  background-color: #433a38;
+  background-image: url("../img/backgrounds/slider_two.jpg");
+  background-repeat: no-repeat;
+}
+
+.top-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-goods__header,
+.top-manufacturers__header {
+  background-color: #f9f5f0;
+}
+
+.top-goods__header h2,
+.top-manufacturers__header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.top-goods__header a,
+.top-manufacturers__header a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.slider__link:hover,
+.slider__link:focus,
+.top-goods__header a:hover,
+.top-goods__header a:focus,
+.top-manufacturers__header:hover,
+.top-manufacturers__header:focus {
+  background-color: #ca2c37;
+}
+
+.slider__link:active,
+.top-goods__header a:active,
+.top-manufacturers__header:active {
+  background-color: #ba2732;
+}
+
+/* Первое */
 .about-block__company h2,
 .about-block__contact h2 {
   font-size: 30px;
@@ -498,7 +626,8 @@ a {
   background-image: none;
 }
 
-.product-cart__new {
+.product-cart__new,
+.offers__new {
   font-size: 15px;
   line-height: 17px;
   color: #ffffff;
