@@ -611,7 +611,10 @@ a {
   text-transform: uppercase;
 }
 
-.bread-crumbs__item a:first-child {
+.bread-crumbs__item:first-child a {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
   background-image: url("../img/svg/icon-home.svg");
   background-repeat: no-repeat;
 }
@@ -935,6 +938,7 @@ a {
 }
 
 .main-footer__feedback-description {
+  margin: 0; /*todo: временно для устранения белых полос*/
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -968,6 +972,10 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.main-footer__mail-wrapper p {
+  margin: 0; /*todo: временно для устранения белых полос*/
 }
 
 .main-footer__mail-wrapper a {
