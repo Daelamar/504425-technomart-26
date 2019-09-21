@@ -157,13 +157,13 @@ a {
   background-color: #212a3a;
 }
 
-.main-header__input:active,
-.main-header__input:focus {
+.main-header__input:focus,
+.main-header__input:active {
   background-color: #ffffff;
 }
 
-.main-header__input:active::placeholder,
-.main-header__input:focus::placeholder {
+.main-header__input:focus::placeholder,
+.main-header__input:active::placeholder {
   color: #000000;
 }
 
@@ -628,6 +628,85 @@ a {
   border: none;
 }
 
+.form__toggle {
+  background-color: #f7f3ec;
+}
+
+.form__price input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border: none;
+}
+
+.form__slide-button {
+  width: 20px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url("../img/svg/filter-button.svg");
+  border: none;
+}
+
+.catalog__header {
+  background-color: #f7f3ec;
+}
+
+.catalog__header p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog__header-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__header-item a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+  transition-duration: 0.3s;
+  outline: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.catalog__header-item a:hover,
+.catalog__header-item a:focus {
+  color: #000000;
+  opacity: 1;
+  border-bottom: 1px solid #000000;
+}
+
+.catalog__header-item--active a,
+.catalog__header-item a:active {
+  color: #ee3643;
+  opacity: 1;
+  border: none;
+}
+
+.catalog__arrow svg {
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.catalog__arrow:hover svg,
+.catalog__arrow:focus svg {
+  fill: #000000;
+}
+
+.catalog__arrow:active svg,
+.catalog__arrow--active svg {
+  fill: #ee3643;
+}
+
 .form__title {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -757,7 +836,39 @@ a {
   background-color: #ee3643;
 }
 
-/*todo: второе задание*/
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  outline: none;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination__link--active {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination__link--active,
+.pagination__link:active {
+  border-color: #ee3643;
+}
 
 .goods-info {
   background-color: #f2f6f8;

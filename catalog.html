@@ -155,22 +155,27 @@
       <form method="post" action="http://echo.htmlacademy.ru">
         <fieldset class="form__fieldset">
           <legend>Цена:</legend>
-          <!-- Форма с туглетками,  при стилизации дополню классами и доступностью-->
-          <div>
+          <div class="form__toggle">
+            <div class="form__slide-wrapper">
+              <!--Контейнер для полозка-->
+              <div class="form__slide"><!--Сам полозок--></div>
+            </div>
+            <button
+              class="form__slide-button form__slide-button--left"
+              type="button"
+              aria-label="Значение минимальной цены"><!--Левая туглетка--></button>
+            <button
+              class="form__slide-button form__slide-button--right"
+              type="button"
+              aria-label="Значение максимальной цены"><!--Правая туглетка--></button>
+          </div>
+          <div class="form__price">
             <label for="filter-start-price">
               <input type="text" name="filter-start-price" id="filter-start-price" value="0" readonly>
             </label>
             <label for="filter-end-price">
               <input type="text" name="filter-end-price" id="filter-end-price" value="30000" readonly>
             </label>
-          </div>
-          <div>
-            <div>
-              <!--Контейнер для полозка-->
-              <div><!--Сам полозок--></div>
-            </div>
-            <button aria-label="Значение минимальной цены"><!--Левая туглетка--></button>
-            <button aria-label="Значение максимальной цены"><!--Правая туглетка--></button>
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -236,22 +241,38 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
-      <div>
+      <div class="catalog__header">
         <p>Сортировка:</p>
-        <ul>
-          <li>
+        <ul class="catalog__header-list">
+          <li class="catalog__header-item catalog__header-item--active">
             <a href="#">По цене</a>
           </li>
-          <li>
+          <li class="catalog__header-item">
             <a href="#">По типу</a>
           </li>
-          <li>
+          <li class="catalog__header-item">
             <a href="#">По функционалу</a>
           </li>
         </ul>
-        <div>
-          <a href="#" aria-label="Сортировка по возростанию"></a>
-          <a href="#" aria-label="Сортировка по убыванию"></a>
+        <div class="catalog__header-arrows">
+          <a class="catalog__arrow catalog__arrow--active" href="#" aria-label="Сортировка по возростанию">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="10"
+              fill="#c5c5c5">
+              <path d="M5.5 0L0 10h11z"/>
+            </svg>
+          </a>
+          <a class="catalog__arrow catalog__arrow" href="#" aria-label="Сортировка по убыванию">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="10"
+              fill="#c5c5c5">
+              <path d="M5.5 10L0 0h11"/>
+            </svg>
+          </a>
         </div>
       </div>
       <ul class="catalog__list">
@@ -454,19 +475,19 @@
           <p class="product-cart__price">12500 Р.</p>
         </li>
       </ul>
-      <div>
-        <ul>
-          <li>
-            <a href="#">1</a>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
           </li>
-          <li>
-            <a href="#">2</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
           </li>
-          <li>
-            <a href="#">3</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
           </li>
-          <li>
-            <a href="#">Следующая</a>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--next" href="#">Следующая</a>
           </li>
         </ul>
       </div>
