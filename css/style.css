@@ -114,7 +114,6 @@ a {
   flex-direction: row;
   position: relative;
   padding: 0 0 0 220px;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-header__top-menu {
@@ -245,7 +244,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 46px 0 40px 0;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-header__info-description {
@@ -254,12 +252,10 @@ a {
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-header__address-list {
   width: 300px;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-header__address-item--tel {
@@ -284,7 +280,6 @@ a {
   padding: 0;
   width: 300px;
   list-style: none;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-header__user-menu-item a,
@@ -350,7 +345,6 @@ a {
   padding: 0;
   list-style: none;
   justify-content: space-around;
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
 }
 
 .main-nav__item {
@@ -367,8 +361,7 @@ a {
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
   transition-duration: 0.3s;
-  /*outline: none;*/
-  outline: 3px solid yellowgreen; /*todo: Временно для сетки*/
+  outline: none;
 }
 
 .main-nav__item a:hover,
@@ -397,7 +390,6 @@ a {
 .offers__item {
   margin: 0 0 20px 0;
   width: 300px;
-  height: 123px; /*todo: Временно для сетки*/
 }
 
 .offers__item p {
@@ -489,18 +481,26 @@ a {
 }
 
 .top-goods__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
 }
 
+
 .top-goods__header,
 .top-manufacturers__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
   background-color: #f9f5f0;
 }
 
 .top-goods__header h2,
 .top-manufacturers__header h2 {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -509,8 +509,11 @@ a {
 
 .top-goods__header a,
 .top-manufacturers__header a {
+  padding: 10px;
+  width: 253px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   transition-duration: 0.3s;
   outline: none;
 }
@@ -531,12 +534,22 @@ a {
 }
 
 .top-manufacturers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
 }
 
 .top-manufacturers__item a {
+  display: flex;
+  margin: 0 0 20px 0;
+  padding: 5px 5px 10px 5px;
+  width: 220px;
+  height: 145px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #eaeaea;
   transition-duration: 0.3s;
 }
@@ -831,6 +844,7 @@ a {
 }
 
 .product-cart {
+  width: 220px;
   border: 1px solid #e5e5e5;
   transition-duration: 0.3s;
 }
