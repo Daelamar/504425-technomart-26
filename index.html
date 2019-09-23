@@ -126,61 +126,65 @@
   <h1 class="visually-hidden">Магазин строительных материалов и инструментов Техномарт</h1>
   <section class="offers container">
     <h2 class="visually-hidden">Выгодные предложения</h2>
-    <ul class="offers__list">
-      <li class="offers__item offers__item--materials">
-        <p>Материалы</p>
-        <a class="offers__link" href="#">На любой вкус</a>
-        <span class="offers__new">new</span>
-      </li>
-      <li class="offers__item offers__item--tool">
-        <p>Инструмент</p>
-        <a class="offers__link" href="#">На все случаи</a>
-      </li>
-      <li class="offers__item offers__item--tech">
-        <p>Техника</p>
-        <a class="offers__link" href="#">Для стройки</a>
-      </li>
-      <li class="offers__item slider">
-        <div class="slider__left invisible">
-          <button type="button" aria-label="Предыдущий слайдер">
-            <!-- Левый переключатель --></button>
-          <button type="button" aria-label="Следующий слайдер">
-            <!-- Правый переключатель --></button>
-          <div>
-            <h2>Перфораторы</h2>
-            <p>Настоящие мужские игрушки</p>
-            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-            <button type="button" aria-label="Переключение на первый слайдер">
-              <!-- Нижний левый переключатель --></button>
-            <button type="button" aria-label="Переключение на второй слайдер">
-              <!-- Нижний правый переключатель --></button>
+    <div class="offers__wrapper">
+      <div class="offers__wrapper-left">
+        <article class="offers__item offers__item--materials">
+          <p>Материалы</p>
+          <a class="offers__link" href="#">На любой вкус</a>
+          <span class="offers__new">new</span>
+        </article>
+        <article class="offers__item offers__item--tool">
+          <p>Инструмент</p>
+          <a class="offers__link" href="#">На все случаи</a>
+        </article>
+        <div class="offers__item slider">
+          <div class="slider__left invisible">
+            <button type="button" aria-label="Предыдущий слайдер">
+              <!-- Левый переключатель --></button>
+            <button type="button" aria-label="Следующий слайдер">
+              <!-- Правый переключатель --></button>
+            <div>
+              <h2>Перфораторы</h2>
+              <p>Настоящие мужские игрушки</p>
+              <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+              <button type="button" aria-label="Переключение на первый слайдер">
+                <!-- Нижний левый переключатель --></button>
+              <button type="button" aria-label="Переключение на второй слайдер">
+                <!-- Нижний правый переключатель --></button>
+            </div>
+          </div>
+          <div class="slider__right">
+            <button type="button" aria-label="Предыдущий слайдер">
+              <!-- Левый переключатель --></button>
+            <button type="button" aria-label="Следующий слайдер">
+              <!-- Правый переключатель --></button>
+            <div>
+              <h2>Дрели</h2>
+              <p>Соседям на радость!</p>
+              <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+              <button type="button" aria-label="Переключение на первый слайдер">
+                <!-- Нижний левый переключатель --></button>
+              <button type="button" aria-label="Переключение на второй слайдер">
+                <!-- Нижний правый переключатель --></button>
+            </div>
           </div>
         </div>
-        <div class="slider__right">
-          <button type="button" aria-label="Предыдущий слайдер">
-            <!-- Левый переключатель --></button>
-          <button type="button" aria-label="Следующий слайдер">
-            <!-- Правый переключатель --></button>
-          <div>
-            <h2>Дрели</h2>
-            <p>Соседям на радость!</p>
-            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-            <button type="button" aria-label="Переключение на первый слайдер">
-              <!-- Нижний левый переключатель --></button>
-            <button type="button" aria-label="Переключение на второй слайдер">
-              <!-- Нижний правый переключатель --></button>
-          </div>
-        </div>
-      </li>
-      <li class="offers__item offers__item--discount">
-        <p>Скидки 50%</p>
-        <a class="offers__link" href="#">На 350 товаров</a>
-      </li>
-      <li class="offers__item offers__item--delivery">
-        <p>Доставка</p>
-        <a class="offers__link" href="#">Бесплатно</a>
-      </li>
-    </ul>
+      </div>
+      <div class="offers__wrapper-right">
+        <article class="offers__item offers__item--tech">
+          <p>Техника</p>
+          <a class="offers__link" href="#">Для стройки</a>
+        </article>
+        <article class="offers__item offers__item--discount">
+          <p>Скидки 50%</p>
+          <a class="offers__link" href="#">На 350 товаров</a>
+        </article>
+        <article class="offers__item offers__item--delivery">
+          <p>Доставка</p>
+          <a class="offers__link" href="#">Бесплатно</a>
+        </article>
+      </div>
+    </div>
   </section>
   <section class="top-goods container">
     <div class="top-goods__header">
@@ -357,35 +361,50 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </div>
-      <ul class="info-block__list">
-        <li class="info-block__item">
-          <button class="info-block__button info-block__button--delivery" type="button">Доставка</button>
-        </li>
-        <li class="info-block__item">
-          <button class="info-block__button info-block__button--warranty" type="button">Гарантия</button>
-        </li>
-        <li class="info-block__item">
-          <button class="info-block__button info-block__button--credit" type="button">Кредит</button>
-        </li>
-      </ul>
-      <div class="info-block__description info-block__description--delivery">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар
-          прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
-      </div>
-      <div class="info-block__description info-block__description--warranty">
-        <h2>Гарантия</h2>
-        <p>Если купленный у нас товар поломается или заискрит,
-          а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы
-          обменяем сгоревший товар на новый.
-          Дом уж восстановите как-нибудь сами.</p>
-      </div>
-      <div class="info-block__description info-block__description--credit">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще!
-          Кредитные консультанты придут вам на помощь.</p>
-        <a class="info-block__link button" href="#">Отправить заявку</a>
+      <div class="info-clock__content">
+        <ul class="info-block__list">
+          <li class="info-block__item">
+            <button class="info-block__button
+            info-block__button--delivery
+            info-block__button--active" type="button">Доставка
+            </button>
+          </li>
+          <li class="info-block__item">
+            <button class="info-block__button
+            info-block__button--warranty" type="button">Гарантия
+            </button>
+          </li>
+          <li class="info-block__item">
+            <button class="info-block__button
+            info-block__button--credit" type="button">Кредит
+            </button>
+          </li>
+        </ul>
+        <div class="info-block__description
+        info-block__description--delivery">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар
+            прямо к вашему подъезду совершенно бесплатно!
+          <p>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+        </div>
+        <div class="info-block__description
+        info-block__description--warranty
+        invisible">
+          <h2>Гарантия</h2>
+          <p>Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
+            Мы
+            обменяем сгоревший товар на новый.</p>
+          <p>Дом уж восстановите как-нибудь сами.</p>
+        </div>
+        <div class="info-block__description
+        info-block__description--credit
+        invisible">
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще!</p>
+          <p>Кредитные консультанты придут вам на помощь.</p>
+          <a class="info-block__link button" href="#">Отправить заявку</a>
+        </div>
       </div>
     </div>
   </article>
@@ -406,7 +425,7 @@
     </div>
     <div class="about-block__contact">
       <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами,заехав в наш офис:</p>
+      <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
       <img src="img/backgrounds/map.png"
            alt="Наш офис по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
            width="300"

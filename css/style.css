@@ -167,7 +167,7 @@ a {
 .main-header__input::placeholder {
   font-family: inherit;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 42px;
   color: #ffffff;
 }
 
@@ -374,17 +374,27 @@ a {
   box-shadow: inset 0 -5px 0 #1d2739;
 }
 
-.offers__list {
+.offers {
+  padding: 59px 0 0 0;
+}
+
+.offers__wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-.offers {
-  padding: 59px 0 0 0;
+.offers__wrapper-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 620px;
+}
+
+.offers__wrapper-right {
+  display: flex;
+  flex-direction: column;
 }
 
 .offers__item {
@@ -565,7 +575,12 @@ a {
 }
 
 .info-block {
+  padding: 68px 0 0 0;
   background-color: #f4f8f9;
+}
+
+.info-block__header {
+  width: 400px;
 }
 
 .info-block__header h2 {
@@ -581,16 +596,23 @@ a {
   line-height: 24px;
 }
 
+.info-clock__content {
+  display: flex;
+}
+
 .info-block__list {
   margin: 0;
-  padding: 0;
+  padding: 70px 0 100px 0;
   list-style: none;
 }
 
 .info-block__button {
+  padding: 15px 22px 16px 22px;
+  width: 240px;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  text-align: left;
   color: #ffffff;
   background-color: #32425c;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
@@ -601,16 +623,24 @@ a {
 
 .info-block__button:hover,
 .info-block__button:focus {
+  color: #ffffff;
   background-color: #293449;
 }
 
-.info-block__button:active {
+.info-block__button:active,
+.info-block__button--active {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
 }
 
+.info-block__description {
+  flex-grow: 1;
+  padding: 68px 0 100px 80px;
+}
+
 .info-block__description h2 {
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -641,16 +671,40 @@ a {
 .info-block__description--delivery {
   background-image: url("../img/backgrounds/car.png");
   background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .info-block__description--warranty {
   background-image: url("../img/backgrounds/guaranty.png");
   background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .info-block__description--credit {
   background-image: url("../img/backgrounds/credit.png");
   background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.info-block__description--delivery p {
+  width: 280px;
+}
+
+.info-block__description--warranty p {
+  width: 380px;
+}
+
+.info-block__description--credit p {
+  width: 380px;
+}
+
+.about-block {
+  display: flex;
+  padding: 82px 0 86px 0;
+}
+
+.about-block__company {
+  padding: 0 100px 0 0;
 }
 
 .about-block__company h2,
