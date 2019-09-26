@@ -308,12 +308,12 @@ a {
 .main-header__info {
   display: flex;
   justify-content: space-between;
-  padding: 49px 0 40px 0;
+  padding: 46px 0 40px 0;
 }
 
 .main-header__info-description {
   margin: 0;
-  padding: 0 0 0 53px;
+  padding: 3px 0 0 53px;
   width: 250px;
   font-size: 16px;
   font-style: italic;
@@ -322,10 +322,19 @@ a {
 }
 
 .main-header__address-list {
-  width: 300px;
+  margin: 0 0 0 2px;
+}
+
+.main-header__address-item,
+.main-header__address-item p {
+  margin: 0;
 }
 
 .main-header__address-item--tel {
+  position: relative;
+  padding: 10px 48px 7px 68px;
+  width: 270px;
+  text-align: center;
   border: 3px solid #ffffff;
 }
 
@@ -335,17 +344,31 @@ a {
   color: #ee3643;
 }
 
+.main-header__address-item--tel::after {
+  position: absolute;
+  content: url("../img/svg/icon-phone.svg");
+  top: 10px;
+  left: 12px;
+  width: 17px;
+  height: 17px;
+
+}
+
 .main-header__address-item p {
+  padding: 4px 6px;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #32425c;
 }
 
 .main-header__user-menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 300px;
+  width: 280px;
   list-style: none;
 }
 
@@ -353,6 +376,7 @@ a {
 .main-header__user-menu-item button {
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
   border: none;
@@ -361,6 +385,13 @@ a {
 }
 
 .main-header__user-menu-item button {
+  padding: 12px 27px 12px 46px;
+  cursor: pointer;
+}
+
+.main-header__user-menu-item a {
+  display: block;
+  padding: 12px 23px;
   cursor: pointer;
 }
 
