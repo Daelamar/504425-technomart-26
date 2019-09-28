@@ -791,7 +791,6 @@ a {
   line-height: 24px;
 }
 
-
 .info-clock__content {
   display: flex;
 }
@@ -849,8 +848,13 @@ a {
 }
 
 .info-block__link {
+  margin: 30px 0 0 0;
+  padding: 10px;
+  display: block;
+  width: 195px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   background-color: #ff5357;
   transition-duration: 0.3s;
   outline: none;
@@ -897,32 +901,37 @@ a {
 
 .about-block {
   display: flex;
-  padding: 82px 0 86px 0;
+  padding: 80px 0 86px 0;
 }
 
 .about-block__company {
   padding: 0 100px 0 0;
 }
 
+.about-block__img {
+  margin: 7px 0 0 0;
+}
+
 .about-block__company h2,
 .about-block__contact h2 {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .about-block__company p,
 .about-block__contact p {
+  margin: 25px 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.about-block__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.about-block__company p:last-of-type {
+  margin: 25px 0 17px 0;
 }
 
 .bread-crumbs {
@@ -942,10 +951,45 @@ a {
   margin: 0 55px 0 0;
 }
 
+.about-block__list {
+  margin: 0;
+  padding: 5px 0 0 35px;
+  list-style: none;
+}
+
 .about-block__link {
+  display: block;
+  margin: 36px 0 0 0;
+  padding: 10px 7px 10px 10px;
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
   transition-duration: 0.3s;
   outline: none;
 }
+
+.about-block__contact .about-block__link {
+  margin: 37px 0 0 0;
+  padding: 10px 5px 10px 10px;
+  width: 100%;
+}
+
+.about-block__item {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+.about-block__item::after {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 2px;
+  top: 9px;
+  left: -34px;
+  background-color: #ee3643;
+}
+
 
 .about-block__link:hover,
 .about-block__link:focus {
@@ -1401,11 +1445,14 @@ a {
 
 .main-footer__logo {
   margin: 0;
-  padding: 20px 40px 25px;
   width: 220px;
   height: 68px;
   text-align: center;
   background-color: #ee3643;
+  background-image: url("../img/svg/logo-technomart.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 44%;
+  background-size: 138px 23px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
