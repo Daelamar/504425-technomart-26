@@ -163,6 +163,10 @@ a {
   transition-duration: 0.3s;
 }
 
+.main-header__label > svg {
+  opacity: 0.3;
+}
+
 .main-header__input {
   padding: 0 10px 0 49px;
   width: 270px;
@@ -193,8 +197,8 @@ a {
   background-color: #212a3a;
 }
 
-.main-header__input:hover + .main-header__label {
-  opacity: 0.3;
+.main-header__input:hover + .main-header__label > svg {
+  opacity: 1;
 }
 
 .main-header__input:focus,
@@ -202,8 +206,9 @@ a {
   background-color: #ffffff;
 }
 
-.main-header__input:focus + .main-header__label svg,
-.main-header__input:active + .main-header__label svg {
+.main-header__input:focus + .main-header__label > svg,
+.main-header__input:active + .main-header__label > svg {
+  opacity: 1;
   fill: #ee3643;
   transition-duration: 0.3s;
 }
@@ -327,6 +332,10 @@ a {
   margin: 0 0 0 2px;
 }
 
+.main-header__address-list--catalog {
+  margin: 0 0 0 20px;
+}
+
 .main-header__address-item,
 .main-header__address-item p {
   margin: 0;
@@ -375,6 +384,11 @@ a {
   list-style: none;
 }
 
+.main-header__user-menu--catalog {
+  width: 299px;
+  justify-content: flex-start;
+}
+
 .main-header__user-menu-item a,
 .main-header__enter-button {
   font-size: 21px;
@@ -392,12 +406,27 @@ a {
   cursor: pointer;
 }
 
+.main-header__enter-button--catalog {
+  width: 299px;
+  text-align: left;
+}
+
 .main-header__icon-login {
   position: absolute;
   top: 14px;
   left: 14px;
-  width: 17px;
+  width: 20px;
   height: 17px;
+}
+
+.main-header__icon-login--catalog {
+  left: auto;
+  right: 11px;
+}
+
+.main-header__icon-login--user {
+  width: 20px;
+  height: 18px;
 }
 
 .main-header__user-menu-item a {
@@ -413,8 +442,8 @@ a {
   color: #ee3643;
 }
 
-.main-header__enter-button:hover + .main-header__icon-login svg,
-.main-header__enter-button:hover + .main-header__icon-login svg {
+.main-header__enter-button:hover ~ .main-header__icon-login svg,
+.main-header__enter-button:hover ~ .main-header__icon-login svg {
   fill: #32425c;
   transition-duration: 0.3s;
 }
@@ -425,17 +454,33 @@ a {
   opacity: 0.3;
 }
 
-.main-header__enter-button:active + .main-header__icon-login svg {
+.main-header__enter-button:active ~ .main-header__icon-login svg {
   fill: #c5c5c5;
   transition-duration: 0.3s;
 }
 
 .main-header__user-menu-item--catalog a {
+  padding: 8px 16px 6px 16px;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
   background-color: #f1f5f7;
+}
+
+.main-header__user-menu-item--catalog:last-of-type a {
+  position: relative;
+}
+
+.main-header__user-menu-item--catalog:last-of-type a::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
 }
 
 .main-header__user-menu-item--catalog button:hover,
@@ -1443,6 +1488,10 @@ a {
   background-color: #32425c;
 }
 
+.main-footer__info .main-footer__wrapper {
+  padding: 0 0 50px 0;
+}
+
 .main-footer__logo {
   margin: 0;
   width: 220px;
@@ -1467,13 +1516,27 @@ a {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0;
-  padding: 42px 0 0 0;
+  padding: 36px 0 0 0;
   width: 615px;
   list-style: none;
 }
 
+.main-footer__list--yellow {
+  padding: 27px 0 0 0;
+}
+
+.main-footer__address-list {
+  margin: 27px 0 0 0;
+  padding: 0 0 0 4px;
+}
+
+.main-footer__address-list p,
+.main-footer__address-list dd {
+  margin: 0;
+}
+
 .main-footer__item a {
-  margin: 0 0 0 60px;
+  margin: 0 0 0 59px;
   padding: 5px 0;
   line-height: 24px;
   color: #f1f5f7;
@@ -1507,7 +1570,7 @@ a {
 
 .main-footer__feedback-description {
   margin: 0;
-  padding: 35px 0;
+  padding: 38px 0;
   width: 255px;
   font-size: 16px;
   line-height: 18px;
@@ -1517,13 +1580,14 @@ a {
 .social-list {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .social-list__item a {
   display: flex;
+  margin: 0 3px 0 0;
   width: 42px;
   height: 42px;
   justify-content: center;
@@ -1544,8 +1608,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
-  width: 290px;
+  padding: 35px 13px 35px 0;
+  width: 299px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
