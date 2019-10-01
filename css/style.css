@@ -180,12 +180,8 @@ a {
   outline: none;
 }
 
-/* Убираем крестик у поля поиска*/
-.main-header__input::-webkit-search-decoration,
-.main-header__input::-webkit-search-cancel-button,
-.main-header__input::-webkit-search-results-button,
-.main-header__input::-webkit-search-results-decoration {
-  display: none;
+.main-header__input:-ms-input-placeholder {
+  color: #ffffff;
 }
 
 .main-header__input::placeholder {
@@ -218,6 +214,14 @@ a {
 .main-header__input:focus::placeholder,
 .main-header__input:active::placeholder {
   color: #000000;
+}
+
+/* Убираем крестик у поля поиска*/
+.main-header__input::-webkit-search-decoration,
+.main-header__input::-webkit-search-cancel-button,
+.main-header__input::-webkit-search-results-button,
+.main-header__input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .main-header__menu-list {
@@ -1948,6 +1952,7 @@ a {
   height: 446px;
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 .map-popup__wrapper {
@@ -2000,20 +2005,71 @@ a {
   background-color: #ff5357;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   transform: translateX(-50%);
+  z-index: 11;
 }
 
 .write-us-popup__form {
   position: relative;
-  background-color: #ffffff;
 }
 
 .write-us-popup__fieldset {
+  margin: 0;
+  padding: 45px 80px 37px;
   border: none;
+  background-color: #ffffff;
+}
+
+.write-us-popup__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .write-us-popup__item {
   display: flex;
   flex-direction: column;
+}
+
+.write-us-popup__item:last-of-type {
+  width: 100%;
+}
+
+.write-us-popup__item label {
+  margin: 0 0 10px 0;
+}
+
+.write-us-popup__item input {
+  margin: 0 0 22px 0;
+  padding: 7px 16px;
+  width: 220px;
+  border: 2px solid #dee3e4;
+}
+
+.write-us-popup__item textarea {
+  padding: 10px 16px;
+  resize: none;
+  border: 2px solid #dee3e4;
+}
+
+.write-us-popup__item input:-ms-input-placeholder,
+.write-us-popup__item textarea:-ms-input-placeholder {
+  /* для IE11 */
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.write-us-popup__item input::placeholder,
+.write-us-popup__item textarea::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #a9a9a9;
 }
 
 .write-us-popup__close {
@@ -2047,6 +2103,31 @@ a {
   height: 4px;
   background-color: #ee3643;
   transform: rotate(45deg);
+}
+
+.write-us-popup__container {
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.write-us-popup__submit {
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.write-us-popup__submit:hover,
+.write-us-popup__submit:focus {
+  background-color: #ca2c37;
+}
+
+.write-us-popup__submit:active {
+  background-color: #ba2732;
 }
 
 /* Для скрытия блоков до JS */
