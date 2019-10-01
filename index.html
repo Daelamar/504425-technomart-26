@@ -133,35 +133,59 @@
           <a class="offers__link" href="#">На все случаи</a>
         </article>
         <div class="offers__item slider">
-          <div class="slider__left invisible">
-            <button type="button" aria-label="Предыдущий слайдер">
+          <div class="slider__item slider__left invisible">
+            <button
+              class="slider__arrow slider__arrow--left"
+              type="button"
+              aria-label="Предыдущий слайдер">
               <!-- Левый переключатель --></button>
-            <button type="button" aria-label="Следующий слайдер">
+            <button
+              class="slider__arrow slider__arrow--right"
+              type="button"
+              aria-label="Следующий слайдер">
               <!-- Правый переключатель --></button>
-            <div>
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-              <button type="button" aria-label="Переключение на первый слайдер">
-                <!-- Нижний левый переключатель --></button>
-              <button type="button" aria-label="Переключение на второй слайдер">
-                <!-- Нижний правый переключатель --></button>
-            </div>
+            <h2>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <a
+              class="slider__link button"
+              href="catalog.html">Открыть каталог</a>
+            <button
+              class="slider__dot slider__dot--active"
+              type="button"
+              aria-label="Переключение на первый слайдер">
+              <!-- Нижний левый переключатель --></button>
+            <button
+              class="slider__dot"
+              type="button"
+              aria-label="Переключение на второй слайдер">
+              <!-- Нижний правый переключатель --></button>
           </div>
-          <div class="slider__right">
-            <button type="button" aria-label="Предыдущий слайдер">
+          <div class="slider__item slider__right">
+            <button
+              class="slider__arrow slider__arrow--left"
+              type="button"
+              aria-label="Предыдущий слайдер">
               <!-- Левый переключатель --></button>
-            <button type="button" aria-label="Следующий слайдер">
+            <button
+              class="slider__arrow slider__arrow--right"
+              type="button"
+              aria-label="Следующий слайдер">
               <!-- Правый переключатель --></button>
-            <div>
-              <h2>Дрели</h2>
-              <p>Соседям на радость!</p>
-              <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-              <button type="button" aria-label="Переключение на первый слайдер">
-                <!-- Нижний левый переключатель --></button>
-              <button type="button" aria-label="Переключение на второй слайдер">
-                <!-- Нижний правый переключатель --></button>
-            </div>
+            <h2>Дрели</h2>
+            <p>Соседям на радость!</p>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+            <button
+              class="slider__dot"
+              type="button"
+              aria-label="Переключение на первый слайдер">
+              <span><!-- Нижний левый переключатель --></span>
+            </button>
+            <button
+              class="slider__dot slider__dot--active"
+              type="button"
+              aria-label="Переключение на второй слайдер">
+              <span><!-- Нижний правый переключатель --></span>
+            </button>
           </div>
         </div>
       </div>
@@ -552,31 +576,39 @@
   </section>
 </footer>
 <div class="map-popup invisible">
-  <img src="img/backgrounds/map_popup.png"
-       alt="Наш офис по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
-       width="940"
-       height="446">
-  <button type="button" aria-label="Кнопка закрытия окна"></button>
+  <div class="map-popup__wrapper">
+    <img src="img/backgrounds/map_popup.png"
+         alt="Наш офис по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+         width="940"
+         height="446">
+    <button
+      class="map-popup__close"
+      type="button"
+      aria-label="Кнопка закрытия окна"></button>
+  </div>
 </div>
-<div class="write-us-popup invisible">
-  <form method="post" action="http://echo.htmlacademy.ru">
-    <fieldset>
-      <ul>
-        <li>
+<div class="write-us-popup">
+  <form
+    class="write-us-popup__form"
+    method="post"
+    action="http://echo.htmlacademy.ru">
+    <fieldset class="write-us-popup__fieldset">
+      <ul class="write-us-popup__list">
+        <li class="write-us-popup__item">
           <label for="username">Ваше имя:</label>
           <input type="text"
                  id="username"
                  name="username"
                  placeholder="Имя Фамилия">
         </li>
-        <li>
+        <li class="write-us-popup__item">
           <label for="user-mail">Ваш e-mail:</label>
           <input type="email"
                  id="user-mail"
                  name="user-mail"
                  placeholder="email@example.com">
         </li>
-        <li>
+        <li class="write-us-popup__item">
           <label for="textarea">Текст письма:</label>
           <textarea id="textarea"
                     name="textarea"
@@ -586,8 +618,14 @@
       </ul>
     </fieldset>
     <div>
-      <button type="submit">Отправить</button>
-      <button type="button" aria-label="Кнопка закрытия окна"></button>
+      <button
+        class="write-us-popup__submit"
+        type="submit">Отправить
+      </button>
+      <button
+        class="write-us-popup__close"
+        type="button"
+        aria-label="Кнопка закрытия окна"></button>
     </div>
   </form>
 </div>
