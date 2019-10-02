@@ -2045,12 +2045,21 @@ a {
   padding: 7px 16px;
   width: 220px;
   border: 2px solid #dee3e4;
+  outline: none;
 }
 
 .write-us-popup__item textarea {
   padding: 10px 16px;
   resize: none;
   border: 2px solid #dee3e4;
+  outline: none;
+}
+
+.write-us-popup__item input:hover,
+.write-us-popup__item input:focus,
+.write-us-popup__item textarea:hover,
+.write-us-popup__item textarea:focus {
+  border: 2px solid #111111;
 }
 
 .write-us-popup__item input:-ms-input-placeholder,
@@ -2072,7 +2081,8 @@ a {
   color: #a9a9a9;
 }
 
-.write-us-popup__close {
+.write-us-popup__close,
+.basket-popup__close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -2081,9 +2091,12 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition-duration: 0.3s;
+  outline: none;
 }
 
-.write-us-popup__close::before {
+.write-us-popup__close::before,
+.basket-popup__close::before {
   position: absolute;
   content: '';
   top: 9px;
@@ -2094,7 +2107,8 @@ a {
   transform: rotate(-45deg);
 }
 
-.write-us-popup__close::after {
+.write-us-popup__close::after,
+.basket-popup__close::after {
   position: absolute;
   content: '';
   top: 9px;
@@ -2103,6 +2117,13 @@ a {
   height: 4px;
   background-color: #ee3643;
   transform: rotate(45deg);
+}
+
+.write-us-popup__close:hover,
+.basket-popup__close:hover,
+.write-us-popup__close:focus,
+.basket-popup__close:focus {
+  transform: scale(1.2);
 }
 
 .write-us-popup__container {
@@ -2128,6 +2149,98 @@ a {
 
 .write-us-popup__submit:active {
   background-color: #ba2732;
+}
+
+/* basket-popup */
+
+.basket-popup {
+  position: fixed;
+  left: 50%;
+  top: 400px;
+  padding: 7px 0 0 0;
+  width: 620px;
+  background-color: #ff5357;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  transform: translateX(-50%);
+  z-index: 12;
+}
+
+.basket-popup__header {
+  padding: 68px 125px 65px 179px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.basket-popup__header p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.basket-popup__header p:before {
+  position: absolute;
+  content: '';
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/svg/icon-mark.svg");
+}
+
+.basket-popup__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.basket-popup__submit {
+  display: block;
+  padding: 10px 15px;
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.basket-popup__submit:hover,
+.basket-popup__submit:focus {
+  background-color: #ca2c37;
+}
+
+.basket-popup__submit:active {
+  background-color: #ba2732;
+}
+
+.basket-popup__continue {
+  padding: 10px 15px;
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  transition-duration: 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.basket-popup__continue:hover,
+.basket-popup__continue:focus {
+  padding: 8px 15px;
+  color: #ee3643;
+  border: 2px solid #ee3643;
+}
+
+.basket-popup__continue:active {
+  padding: 8px 15px;
+  color: #ba2732;
+  border: 2px solid #ba2732;
 }
 
 /* Для скрытия блоков до JS */

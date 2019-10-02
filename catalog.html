@@ -680,11 +680,19 @@
   </section>
 </footer>
 <div class="basket-popup invisible">
-  <p>Товар добавлен в корзину!</p>
-  <div>
-    <a href="#">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
-    <button type="button" aria-label="Кнопка закрытия окна"></button>
+  <div class="basket-popup__header">
+    <p>Товар добавлен в корзину!</p>
+  </div>
+  <div class="basket-popup__wrapper">
+    <a href="#" class="basket-popup__submit button">Оформить заказ</a>
+    <button
+      class="basket-popup__continue"
+      type="button">Продолжить покупки
+    </button>
+    <button
+      class="basket-popup__close"
+      type="button"
+      aria-label="Кнопка закрытия окна"></button>
   </div>
 </div>
 </body>
