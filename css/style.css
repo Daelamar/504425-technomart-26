@@ -1550,9 +1550,9 @@ a {
 
 .product-cart__image {
   display: block;
-
-  transition: transform 0.3s ease;
   transform: translateX(0%);
+  transition: transform 0.3s linear;
+  transition-delay: 0.3s;
 }
 
 .product-cart__popup-block {
@@ -1565,7 +1565,8 @@ a {
   width: 218px;
   height: 170px;
   transform: translateX(0%);
-  transition: transform 0.3s ease
+  transition: transform 0.3s linear;
+  transition-delay: 0.3s;
 }
 
 .product-cart:hover {
