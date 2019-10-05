@@ -972,13 +972,12 @@ a {
   outline: none;
 }
 
-.info-block__button:hover,
-.info-block__button:focus {
+.info-block__button:hover {
   color: #ffffff;
   background-color: #293449;
 }
 
-.info-block__button:active,
+.info-block__button:focus,
 .info-block__button--active {
   color: #32425c;
   background-color: #ffffff;
@@ -986,6 +985,7 @@ a {
 }
 
 .info-block__description {
+  display: none;
   flex-grow: 1;
   padding: 68px 0 100px 80px;
 }
@@ -1998,6 +1998,7 @@ a {
 /* write-us-popup */
 
 .write-us-popup {
+  display: none;
   position: fixed;
   left: 50%;
   bottom: 200px;
@@ -2006,6 +2007,7 @@ a {
   background-color: #ff5357;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   transform: translateX(-50%);
+  animation: popup-show 0.6s linear;
   z-index: 11;
 }
 
@@ -2152,6 +2154,46 @@ a {
   background-color: #ba2732;
 }
 
+@keyframes popup-show {
+  0% {
+    bottom: -1000px;
+  }
+
+  70% {
+    bottom: 100px;
+  }
+
+  90% {
+    bottom: 300px;
+  }
+
+  100% {
+    bottom: 200px;
+  }
+}
+
+@keyframes error {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-55%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-45%);
+  }
+}
+
 /* basket-popup */
 
 .basket-popup {
@@ -2244,8 +2286,20 @@ a {
   border: 2px solid #ba2732;
 }
 
-/* Для скрытия блоков до JS */
+/* JS */
 
 .invisible {
   display: none;
+}
+
+.show-popup {
+  display: block;
+}
+
+.popup-error {
+  animation: error 0.4s ease-in-out;
+}
+
+.info-block__description--active {
+  display: block;
 }

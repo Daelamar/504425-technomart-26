@@ -408,15 +408,15 @@
           </li>
         </ul>
         <div class="info-block__description
-        info-block__description--delivery">
+        info-block__description--delivery
+        info-block__description--active">
           <h2>Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар
             прямо к вашему подъезду совершенно бесплатно!
           <p>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
         </div>
         <div class="info-block__description
-        info-block__description--warranty
-        invisible">
+        info-block__description--warranty">
           <h2>Гарантия</h2>
           <p>Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
@@ -425,8 +425,7 @@
           <p>Дом уж восстановите как-нибудь сами.</p>
         </div>
         <div class="info-block__description
-        info-block__description--credit
-        invisible">
+        info-block__description--credit">
           <h2>Кредит</h2>
           <p>Залезть в долговую яму стало проще!</p>
           <p>Кредитные консультанты придут вам на помощь.</p>
@@ -458,7 +457,10 @@
            alt="Наш офис по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
            width="300"
            height="158">
-      <a href="#" class="about-block__link button">Заблудились? Напишите нам!</a>
+      <a href="#"
+         class="about-block__link
+         button
+         about-block__link--show">Заблудились? Напишите нам!</a>
     </div>
   </article>
 </main>
@@ -587,7 +589,7 @@
       aria-label="Кнопка закрытия окна"></button>
   </div>
 </div>
-<div class="write-us-popup invisible">
+<div class="write-us-popup">
   <form
     class="write-us-popup__form"
     method="post"
@@ -626,6 +628,8 @@
     </div>
   </form>
 </div>
+<script src="js/popup.js"></script>
+<script src="js/info.js"></script>
 </body>
 
 </html>
