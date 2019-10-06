@@ -133,47 +133,17 @@
           <a class="offers__link" href="#">На все случаи</a>
         </article>
         <div class="offers__item slider">
-          <div class="slider__item slider__left invisible">
-            <button
-              class="slider__arrow slider__arrow--left"
-              type="button"
-              aria-label="Предыдущий слайдер">
-              <!-- Левый переключатель --></button>
-            <button
-              class="slider__arrow slider__arrow--right"
-              type="button"
-              aria-label="Следующий слайдер">
-              <!-- Правый переключатель --></button>
-            <h2>Перфораторы</h2>
-            <p>Настоящие мужские игрушки</p>
-            <a
-              class="slider__link button"
-              href="catalog.html">Открыть каталог</a>
-            <button
-              class="slider__dot slider__dot--active"
-              type="button"
-              aria-label="Переключение на первый слайдер">
-              <!-- Нижний левый переключатель --></button>
-            <button
-              class="slider__dot"
-              type="button"
-              aria-label="Переключение на второй слайдер">
-              <!-- Нижний правый переключатель --></button>
-          </div>
-          <div class="slider__item slider__right">
-            <button
-              class="slider__arrow slider__arrow--left"
-              type="button"
-              aria-label="Предыдущий слайдер">
-              <!-- Левый переключатель --></button>
-            <button
-              class="slider__arrow slider__arrow--right"
-              type="button"
-              aria-label="Следующий слайдер">
-              <!-- Правый переключатель --></button>
-            <h2>Дрели</h2>
-            <p>Соседям на радость!</p>
-            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+          <button
+            class="slider__arrow slider__arrow--left"
+            type="button"
+            aria-label="Предыдущий слайдер">
+            <!-- Левый переключатель --></button>
+          <button
+            class="slider__arrow slider__arrow--right"
+            type="button"
+            aria-label="Следующий слайдер">
+            <!-- Правый переключатель --></button>
+          <div class="slider__wrapper">
             <button
               class="slider__dot"
               type="button"
@@ -186,6 +156,18 @@
               aria-label="Переключение на второй слайдер">
               <span><!-- Нижний правый переключатель --></span>
             </button>
+          </div>
+          <div class="slider__item slider__left">
+            <h2>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <a
+              class="slider__link button"
+              href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="slider__item slider__right slider__item--active">
+            <h2>Дрели</h2>
+            <p>Соседям на радость!</p>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
       </div>
@@ -630,6 +612,6 @@
 </div>
 <script src="js/popup.js"></script>
 <script src="js/info.js"></script>
+<script src="js/slider.js"></script>
 </body>
-
 </html>

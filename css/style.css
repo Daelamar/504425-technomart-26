@@ -689,6 +689,7 @@ a {
 /* slider */
 
 .slider {
+  position: relative;
   padding: 0;
   width: 620px;
   min-height: 266px;
@@ -712,9 +713,20 @@ a {
 }
 
 .slider__item {
-  position: relative;
+  display: none;
   padding: 22px 25px;
   min-height: 266px;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+.slider__wrapper {
+  position: absolute;
+  bottom: 32px;
+  left: 290px;
+  z-index: 10;
 }
 
 .slider__left {
@@ -1266,6 +1278,7 @@ a {
   background-color: transparent;
   background-image: url("../img/svg/filter-button.svg");
   border: none;
+  cursor: pointer;
 }
 
 .form__slide-button--right {
@@ -2197,6 +2210,7 @@ a {
 /* basket-popup */
 
 .basket-popup {
+  display: none;
   position: fixed;
   left: 50%;
   top: 400px;
