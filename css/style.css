@@ -1839,6 +1839,20 @@ a {
   background-position: 50% 44%;
   background-size: 138px 23px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  transition-duration: 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+.main-footer__logo:hover,
+.main-footer__logo:focus {
+  background-color: #ca2c37;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.main-footer__logo:active {
+  background-color: #ba2732;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .main-footer__wrapper {
