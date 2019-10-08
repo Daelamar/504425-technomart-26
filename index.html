@@ -154,7 +154,8 @@
               class="slider__dot slider__dot--right"
               type="button"
               aria-label="Переключение на второй слайдер">
-              <span class="slider__span slider__span--right slider__span--active"><!-- Нижний правый переключатель --></span>
+              <span
+                class="slider__span slider__span--right slider__span--active"><!-- Нижний правый переключатель --></span>
             </button>
           </div>
           <div class="slider__item slider__left">
@@ -450,7 +451,7 @@
   <section class="main-footer__info">
     <div class="main-footer__wrapper container">
       <h2 class="visually-hidden">Контакты и информация</h2>
-      <p class="main-footer__logo"></p>
+      <a href="#" class="main-footer__logo"></a>
       <ul class="main-footer__list">
         <li class="main-footer__item">
           <a href="#">Компания</a>
@@ -559,12 +560,14 @@
     </div>
   </section>
 </footer>
-<div class="map-popup invisible">
+<div class="map-popup">
   <div class="map-popup__wrapper">
-    <img src="img/backgrounds/map_popup.png"
-         alt="Наш офис по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
-         width="940"
-         height="446">
+    <iframe
+      src="https://yandex.ru/map-widget/v1/-/CGsPA6Kr"
+      width="940"
+      height="446"
+      frameborder="1">
+    </iframe>
     <button
       class="map-popup__close"
       type="button"
@@ -613,5 +616,6 @@
 <script src="js/popup.js"></script>
 <script src="js/info.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
