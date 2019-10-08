@@ -759,7 +759,7 @@ a {
 }
 
 .slider__link {
-  display: inline-block;
+  display: block;
   margin: 121px 66px 0 0;
   padding: 10px 7px 10px 12px;
   width: 195px;
@@ -824,6 +824,7 @@ a {
   display: inline-block;
   width: 10px;
   height: 10px;
+  vertical-align: center;
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -1213,7 +1214,7 @@ a {
 
 .bread-crumbs__item:first-child a {
   margin: 0 35px 0 0;
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 20px;
   background-image: url("../img/svg/icon-home.svg");
@@ -1358,7 +1359,7 @@ a {
 }
 
 .form__item label {
-  display: inline-block;
+  display: block;
   margin: 0 0 20px 0;
 }
 

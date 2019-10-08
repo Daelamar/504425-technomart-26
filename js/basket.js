@@ -1,5 +1,9 @@
 'use strict';
 
+(function () {
+
+})();
+
 var buyBtnArr = document.querySelectorAll('.product-cart__button--buy');
 var basket = document.querySelector('.basket-popup');
 var close_basket = basket.querySelector('.basket-popup__close');
