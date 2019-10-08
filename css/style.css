@@ -473,8 +473,12 @@ a {
   transition-duration: 0.3s;
 }
 
+.main-header__user-menu-item--catalog {
+  padding: 0;
+}
+
 .main-header__user-menu-item--catalog a {
-  padding: 8px 16px 6px 16px;
+  padding: 8px 16px 6px 17px;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -482,15 +486,15 @@ a {
   background-color: #f1f5f7;
 }
 
-.main-header__user-menu-item--catalog:last-of-type a {
+.main-header__user-menu-item--catalog:nth-child(even) a {
   position: relative;
 }
 
-.main-header__user-menu-item--catalog:last-of-type a::after {
+.main-header__user-menu-item--catalog:nth-child(even) a::before {
   content: '';
   position: absolute;
   top: 15px;
-  left: 1px;
+  right: -4px;
   width: 4px;
   height: 4px;
   background-color: #32425c;
@@ -1795,7 +1799,7 @@ a {
 }
 
 .goods-info__wrapper {
-  padding: 65px 0 67px;
+  padding: 65px 0 68px;
 }
 
 .goods-info__title {
@@ -1840,6 +1844,7 @@ a {
 .main-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -1848,7 +1853,7 @@ a {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0;
-  padding: 36px 0 0 0;
+  padding: 38px 0 0 0;
   width: 615px;
   list-style: none;
 }
@@ -1865,6 +1870,7 @@ a {
 .main-footer__address-list p,
 .main-footer__address-list dd {
   margin: 0;
+  max-width: 321px;
 }
 
 .main-footer__item a {
@@ -1901,9 +1907,11 @@ a {
 }
 
 .main-footer__feedback-description {
+  display: flex;
   margin: 0;
   padding: 38px 0;
-  width: 255px;
+  align-items: center;
+  max-width: 255px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1950,15 +1958,17 @@ a {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 0 20px;
+  margin: 20px 0 15px 20px;
   padding: 0;
+  max-width: 260px;
   list-style: none;
 }
 
 .social-list__item a {
   display: flex;
-  margin: 0 3px 0 0;
+  margin: 0 3px 5px 0;
   width: 42px;
   height: 42px;
   justify-content: center;
@@ -2117,6 +2127,10 @@ a {
   margin: 0 0 22px 0;
   padding: 7px 16px;
   width: 220px;
+  font-family: "PT Sans", arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
   border: 2px solid #dee3e4;
   outline: none;
 }
@@ -2124,6 +2138,10 @@ a {
 .write-us-popup__item textarea {
   padding: 10px 16px;
   resize: none;
+  min-height: 110px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
   border: 2px solid #dee3e4;
   outline: none;
 }
