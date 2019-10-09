@@ -83,15 +83,15 @@
     warrantyBlock.classList.remove('info-block__description--active');
   };
 
-  warrantyBtn.addEventListener("click", getWarrantyBlock);
-  creditBtn.addEventListener("click", getCreditBlock);
-  deliveryBtn.addEventListener("click", getDeliveryBlock);
+  warrantyBtn.addEventListener('click', getWarrantyBlock);
+  creditBtn.addEventListener('click', getCreditBlock);
+  deliveryBtn.addEventListener('click', getDeliveryBlock);
 })();
 (function () {
   var contact = document.querySelector('.about-block__contact');
   var link = contact.querySelector('.about-block__link--show');
   var popup = document.querySelector('.write-us-popup');
-  var close_btn = popup.querySelector(".write-us-popup__close");
+  var close_btn = popup.querySelector('.write-us-popup__close');
   var login = popup.querySelector('[name=username]');
   var password = popup.querySelector('[name=user-mail]');
   var form = popup.querySelector('form');
@@ -106,7 +106,7 @@
     isStorageSupport = false;
   }
 
-  link.addEventListener("click", function (evt) {
+  link.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.add('show-popup');
 

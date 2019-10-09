@@ -126,15 +126,11 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 10px 10px 13px;
+  padding: 12px 10px 12px;
   width: 220px;
   height: 47px;
   text-align: center;
   background-color: #ee3643;
-  background-image: url("../img/svg/logo-technomart.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 109px 17px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   transition-duration: 0.3s;
   cursor: pointer;
@@ -258,7 +254,7 @@ a {
 
 .main-header__menu-item:first-child a::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 12px;
   left: 16px;
   width: 14px;
@@ -270,7 +266,7 @@ a {
 
 .main-header__menu-item:nth-child(2) a::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 12px;
   left: 18px;
   width: 15px;
@@ -366,7 +362,7 @@ a {
 
 .main-header__address-item--tel::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 10px;
   left: 12px;
   width: 19px;
@@ -404,7 +400,7 @@ a {
 }
 
 .main-header__user-menu-item a,
-.main-header__enter-button {
+.main-header__user-menu-item .main-header__enter-button {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -415,14 +411,16 @@ a {
   outline: none;
 }
 
-.main-header__enter-button {
+.main-header__user-menu-item .main-header__enter-button {
   padding: 12px 27px 12px 46px;
   cursor: pointer;
 }
 
-.main-header__enter-button--catalog {
+.main-header__user-menu-item .main-header__enter-button--catalog {
   width: 299px;
   text-align: left;
+  text-decoration: none;
+  border: none;
 }
 
 .main-header__icon-login {
@@ -433,14 +431,18 @@ a {
   height: 17px;
 }
 
-.main-header__icon-login--catalog {
+.main-header__user-menu-item .main-header__icon-login--catalog {
+  padding: 0;
   left: auto;
   right: 11px;
+  background-color: transparent;
 }
 
-.main-header__icon-login--user {
+.main-header__user-menu-item .main-header__icon-login--user {
+  padding: 0;
   width: 20px;
   height: 18px;
+  background-color: transparent;
 }
 
 .main-header__user-menu-item a {
@@ -454,6 +456,16 @@ a {
 .main-header__user-menu-item a:hover,
 .main-header__user-menu-item a:focus {
   color: #ee3643;
+}
+
+.main-header__icon-login:hover svg,
+.main-header__icon-login:focus svg {
+  fill: #32425c;
+}
+
+.main-header__user-menu-item .main-header__enter-button--catalog:hover,
+.main-header__user-menu-item .main-header__enter-button--catalog:focus {
+  color: #000000;
 }
 
 .main-header__enter-button:hover ~ .main-header__icon-login svg,
@@ -491,7 +503,7 @@ a {
 }
 
 .main-header__user-menu-item--catalog:nth-child(even) a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   right: -4px;
@@ -613,7 +625,7 @@ a {
 
 .offers__item--materials::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 32px;
   right: 43px;
   width: 44px;
@@ -627,7 +639,7 @@ a {
 
 .offers__item--tool::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 34px;
   right: 28px;
   width: 75px;
@@ -641,7 +653,7 @@ a {
 
 .offers__item--tech::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 31px;
   right: 31px;
   width: 78px;
@@ -655,7 +667,7 @@ a {
 
 .offers__item--discount::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 26px;
   right: 45px;
   width: 59px;
@@ -669,7 +681,7 @@ a {
 
 .offers__item--delivery::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 32px;
   right: 31px;
   width: 78px;
@@ -984,7 +996,7 @@ a {
 
 .info-block__list::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 26px;
   right: 0;
   width: 10px;
@@ -1159,7 +1171,7 @@ a {
 
 .about-block__item::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   top: 9px;
@@ -1179,7 +1191,7 @@ a {
 /* bread-crumbs */
 
 .bread-crumbs {
-  padding: 18px 25px 18px 0;
+  padding: 21px 25px 20px 0;
 }
 
 .bread-crumbs__list {
@@ -1203,7 +1215,7 @@ a {
 
 .bread-crumbs__item:not(:first-child) a::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 8px;
   height: 12px;
   top: 3px;
@@ -1640,7 +1652,7 @@ a {
 
 .product-cart__button--buy::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 10px;
   left: 12px;
   width: 15px;
@@ -1833,14 +1845,11 @@ a {
 .main-footer__logo {
   display: block;
   margin: 0;
+  padding: 20px 10px;
   width: 220px;
   height: 68px;
   text-align: center;
   background-color: #ee3643;
-  background-image: url("../img/svg/logo-technomart.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 44%;
-  background-size: 138px 23px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   transition-duration: 0.3s;
   cursor: pointer;
@@ -2008,7 +2017,7 @@ a {
   display: none;
   position: fixed;
   right: 50%;
-  bottom: 370px;
+  bottom: 30%;
   width: 940px;
   height: 446px;
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
@@ -2043,7 +2052,7 @@ a {
 
 .map-popup__close::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 9px;
   left: -2px;
   width: 24px;
@@ -2054,7 +2063,7 @@ a {
 
 .map-popup__close::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 9px;
   left: -2px;
   width: 24px;
@@ -2098,7 +2107,7 @@ a {
   display: none;
   position: fixed;
   left: 50%;
-  bottom: 200px;
+  bottom: 30%;
   padding: 7px 0 0 0;
   width: 620px;
   background-color: #ff5357;
@@ -2206,7 +2215,7 @@ a {
 .write-us-popup__close::before,
 .basket-popup__close::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 9px;
   left: -2px;
   width: 24px;
@@ -2218,7 +2227,7 @@ a {
 .write-us-popup__close::after,
 .basket-popup__close::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 9px;
   left: -2px;
   width: 24px;
@@ -2261,19 +2270,19 @@ a {
 
 @keyframes popup-show {
   0% {
-    bottom: -1000px;
+    bottom: -300%;
   }
 
   70% {
-    bottom: 100px;
+    bottom: 0;
   }
 
   90% {
-    bottom: 300px;
+    bottom: 40%;
   }
 
   100% {
-    bottom: 200px;
+    bottom: 30%;
   }
 }
 
@@ -2305,7 +2314,7 @@ a {
   display: none;
   position: fixed;
   left: 50%;
-  top: 400px;
+  bottom: 50%;
   padding: 7px 0 0 0;
   width: 620px;
   background-color: #ff5357;
@@ -2328,7 +2337,7 @@ a {
 
 .basket-popup__header p:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 48px;
   left: 81px;
   width: 66px;
